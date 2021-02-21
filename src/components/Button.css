@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  border: none;
+  margin-top: 30px;
+  padding: 20px 30px;
+  border-radius: 30px;
+  font-weight: 500;
+  color: #258de8;
+}
+/*# sourceMappingURL=Button.css.map */

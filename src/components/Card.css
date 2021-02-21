@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  margin: 0 40px;
+  padding: 40px 0;
+}
+
+.card .img-box {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #333;
+  border-radius: 20px;
+  -webkit-transition: 0.4s all;
+  transition: 0.4s all;
+}
+
+.card .img-box img {
+  margin-top: 20px;
+  width: 40px;
+}
+
+.card .img-box:hover {
+  border: 2px solid #fff;
+  background: #fff;
+}
+
+.card h1 {
+  max-width: 100%;
+  font-size: 1.5em;
+  text-align: left;
+  font-weight: 100;
+}
+
+.card p {
+  max-width: 100%;
+  text-align: left;
+}
+/*# sourceMappingURL=Card.css.map */
