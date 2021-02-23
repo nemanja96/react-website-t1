@@ -24,8 +24,10 @@
     max-width: 80%;
     margin: 50px auto;
     display: flex;
+    justify-content: center;
 
     .pricing-card {
+      max-width: 300px;
       padding: 60px;
       border-radius: 20px;
       margin: 30px;
