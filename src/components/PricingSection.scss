@@ -60,3 +60,20 @@
     }
   }
 }
+
+@media only screen and (max-width: 960px) {
+  .pricing-section {
+    max-width: 85%;
+    margin: 0 auto;
+    justify-content: center;
+
+    .pricing-cards {
+      flex-direction: column;
+
+      .pricing-card {
+        margin: 50px auto;
+        padding: 60px 30px;
+      }
+    }
+  }
+}

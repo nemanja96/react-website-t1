@@ -1,9 +1,9 @@
 import React from "react";
-import "./ImgText.scss";
+import "./ImgTextSection.scss";
 
-function ImgText(props) {
+function ImgTextSection(props) {
   return (
-    <div className={props.style == "reverse" ? "img-text2" : "img-text"}>
+    <div className={props.style == "reverse" ? "img-text reverse" : "img-text"}>
       <div className="img">
         <img src={props.src} />
       </div>
@@ -15,4 +15,4 @@ function ImgText(props) {
   );
 }
 
-export default ImgText;
+export default ImgTextSection;

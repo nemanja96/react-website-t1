@@ -9,7 +9,8 @@
   display: flex;
   padding: 100px 0;
   margin: 0 auto;
-  max-width: 80%;
+  width: 80%;
+  max-width: 1300px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -43,6 +44,7 @@
 }
 
 .img-text .img {
+  max-width: 400px;
   width: 35%;
 }
 
@@ -50,56 +52,51 @@
   width: 100%;
 }
 
-.img-text2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 50px 0;
-  margin: 0 auto;
-  max-width: 80%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.img-text2 .text {
-  width: 45%;
-  text-align: left;
+.reverse .text {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
-.img-text2 .text h2 {
-  font-size: 4rem;
-  padding: 20px 0;
-  font-weight: 500;
-  color: #fff;
-  margin: 0 auto;
-}
-
-.img-text2 .text p {
-  color: #888;
-  font-weight: 500;
-}
-
-.img-text2 .img {
-  width: 35%;
+.reverse .img {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
 }
 
-.img-text2 .img img {
-  width: 100%;
+@media only screen and (max-width: 960px) {
+  .img-text,
+  .img-text2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .img-text .img,
+  .img-text2 .img {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .img-text .text,
+  .img-text2 .text {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .img-text .text h2,
+  .img-text2 .text h2 {
+    text-align: center;
+    font-size: 3em;
+  }
+  .reverse .img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .reverse .text {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
 }
-/*# sourceMappingURL=ImgText.css.map */
+/*# sourceMappingURL=ImgTextSection.css.map */
